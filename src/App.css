@@ -1,0 +1,370 @@
+.cricbuzz{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* -------------------------------Top Scroll------------------------------------------------ */
+
+.topscroll{
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50px) ;
+  background-color: rgba(25, 25, 25, 0.7);
+  cursor: pointer;
+  color: white;
+}
+/* -------------------------------------Nav--------------------------------------------------- */
+nav{
+  position: relative;
+}
+.navbar1 .navbar-nav .nav-item .nav-link{
+
+}
+.navbar1 .navbar-nav .nav-item .nav-link:hover{
+  background-color:#2E8b57;
+  height: 100%;
+}
+.navbar1 .navbar-nav .nav-item .names{
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+.navbar1 .navbar-nav .nav-item:hover .names{
+  display: block;
+}
+.navbar1 .navbar-nav .nav-item .names a{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar1 .navbar-nav .nav-item .names a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+.navbar1{
+  background-color: #3cb371;
+}
+.navbar-brand img {
+  max-width: 90px;
+  height: auto;
+}
+.navbar-toggler span{
+  background-color:white;
+  display: block;
+}
+.navbar-toggler span:active{
+  border: none;
+}
+.navbar-toggler-icon:focus {
+  border: none;
+}
+.collapse {
+  display: none;
+}
+.show {
+  display: block;
+}
+.navbar-collapse {
+  transition: all 2.3s ease;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+} 
+.nav-item {
+  position: relative;
+} 
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* ----------------------------------------------Navbar-two----------- */
+
+.navbarmatch{
+    background-color:black;
+}
+.navbarmatch .navbar-nav .nav-item .nav-link{
+    font-size: 15px;
+    padding: 10px;
+}
+.navbarmatch .navbar-nav .nav-item .nav-link:hover{
+    background-color:#1f1d1b;
+}
+/* ----------------------------------------Owl Carousel--------------------------------------- */
+.owl-carousel  .owl-prev, .owl-carousel .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #3cb371 !important;
+    border-radius: 50% !important;
+  }
+  .owl-prev { left: 0; } .owl-next { right: 0; }
+  /* -------------------------------------series venue--------------------------------------------- */
+
+  .seriesvanue a{text-decoration: none}
+
+  .seriesvanue a:hover{text-decoration: underline;}
+
+  /* -------------------------------nav pills------------------------------------------------------------- */
+  .nav-pills{
+    background-color:lightgray;
+    color: white;
+  }
+  .nav-pills .nav-link:active{
+    background-color:lightgray;
+    color: white;
+  }
+  .nav-pills .nav-link{
+    color: black;
+  }
+  .nav-pills .nav-link:hover{
+    color: black;
+  }
+  .nav-pills .nav-link.active{
+    text-decoration: underline;
+    color: #3cb371;
+  }
+  /* -------------------------------quick access--------------------------------------------- */
+  .QuickAccess{
+    background-color: #ffffff;
+  }
+  .QuickAccess span{
+    padding: 2px;
+    font-size: 20px;
+  }
+  .QuickAccess a{
+    background-color: rgb(230, 230, 230);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: black;
+    padding: 10px;
+    margin: 0px 22px;
+  }
+  .QuickAccess a:hover{
+    text-decoration: underline;
+  }
+
+/* ------------------------------Footer------------------------------------------------------------ */
+footer .mobile a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+/* Slide-in effect for content */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideInUp {
+  animation: slideInUp 1s ease-out;
+}
+
+/* Fade-in effect for the content section */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Button animations for hover effect */
+.btn-animation {
+  transition: transform 0.3s ease, 
+  box-shadow 0.3s ease;
+}
+
+.btn-animation:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.latestnews p a{
+  text-decoration: none;
+  font-size: 14px;
+}
+.latestnews p a:hover{
+  text-decoration: underline;
+}
+.iplacuction h4 a{
+  text-decoration: none;
+  color: black;
+}
+.iplacuction h4 a:hover{
+  text-decoration: underline;
+}
+/* -------------------------------------------------Log in cricbuzz ------------------------*/
+/* .logintocricbuzz form{
+  background-color:lightgreen;
+  border-radius: 10px;
+} */
+.logintocricbuzz form .singup{
+  text-decoration: none;
+  color: black;
+}
+.logintocricbuzz form .singup:hover{
+  text-decoration: underline;
+  color: green;
+}
+.logintocricbuzz form p button{
+  border: none;
+  background-color: #2E8b57;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+.logintocricbuzz form p button:hover{
+  box-shadow: 0px 0px 5px black;
+  transform: scale(1.1);
+
+}
+.sigupcricbuzz a{
+  text-decoration: none;
+}
+.sigupcricbuzz a:hover{
+  text-decoration: underline;
+}
+.logintocricbuzz form input{
+  background-color: transparent;
+}
+.logintocricbuzz form input:focus{
+  background-color: transparent;
+}
+.logintocricbuzz form div {
+  position: relative;
+}
+.logintocricbuzz form div i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+/* --------------------------------------------------logoutcricbuzz------------------------ */
+.logoutcricbuzz{
+  background-color: black;
+  position: absolute;
+  right:0px;
+  top: 50px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  z-index: 999;
+  border: 1px solid white;
+}
+.logoutcricbuzz span{
+  background-color: aliceblue;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 10px;
+  padding: 10px;
+  color: white;
+}
+.logoutcricbuzz h1{
+  background-color: red;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+}
+.logoutcricbuzz span:hover{
+  background-color: red;
+  
+}
+.logoutcricbuzz .manageaccount{
+  margin: 20px;
+}
+.logoutcricbuzz .manageaccount a{
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+.logoutcricbuzz .manageaccount a:hover{
+  background-color:darkslategrey
+}
+.logoutaddaccount{
+  height: 40px;
+}
+.logoutaddaccount .addaccount{
+  background-color:dimgray;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.logoutaddaccount .logout{
+  background-color:dimgray;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.privacyterms{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.privacyterms a{
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+}
+.privacyterms a:hover{
+  background-color: grey;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 576px){
+  .QuickAccess span{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+  .QuickAccess a{
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    margin: 0px 5px;
+    font-size: 10px;
+  }
+
+  .logoutcricbuzz{
+    left:-200px;
+    top: 40px;
+    width: 350px;
+  }
+
+  
+  
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+
+
