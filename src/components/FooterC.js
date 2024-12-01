@@ -8,12 +8,12 @@ const Footer = ()=>{
         <footer className="bg-dark text-light">
             <div className="container">
                 <div className="row  py-4">
-                    <div className="col-lg-3 col-md-6 col-12 text-md-start text-lg-start text-center ">
+                    <div className="col-lg-3 col-md-6 col-8 mx-auto text-md-start text-lg-start text-center ">
                         <div className="mt-3">
                             <img src="https://static.cricbuzz.com/images/cb_logo.svg" width={"100px"}/>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-12 text-md-start text-lg-start text-center mobile">
+                    <div className="col-lg-3 col-md-6 col-8 m-auto  mobile">
                         <div className="mt-3">
                            <h5>MOBILE SITE & APPS</h5>
                            <p ><span> <BiWorld className="text-success"/></span> <a href="#">m.cricbuzz.com</a></p>
@@ -22,7 +22,7 @@ const Footer = ()=>{
                         </div>
 
                     </div>
-                    <div className="col-lg-3 col-md-6 col-12 text-md-start text-lg-start text-center mobile">
+                    <div className="col-lg-3 col-md-6  col-8 mx-auto mobile">
                         
                         <div className="mt-3">
                            <h5>FOLLOW US ON</h5>
@@ -33,7 +33,7 @@ const Footer = ()=>{
                         </div>
 
                     </div>
-                    <div className="col-lg-3 col-md-6 col-12 text-md-start text-lg-start text-center">
+                    <div className="col-lg-3 col-md-6  col-8 mx-auto ">
                         
                         <div  className="mt-3">
                            <h5>COMPANY</h5>

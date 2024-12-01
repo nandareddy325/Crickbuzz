@@ -2,7 +2,6 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 /* -------------------------------Top Scroll------------------------------------------------ */
-
 .topscroll{
   position: fixed;
   bottom: 20px;
@@ -11,12 +10,14 @@
   background-color: rgba(25, 25, 25, 0.7);
   cursor: pointer;
   color: white;
+  z-index: 2;
 }
 /* -------------------------------------Nav--------------------------------------------------- */
 nav{
   position: relative;
 }
 .navbar1 .navbar-nav .nav-item .nav-link{
+  font-size: 15px;
 
 }
 .navbar1 .navbar-nav .nav-item .nav-link:hover{
@@ -133,25 +134,57 @@ nav{
     color: #3cb371;
   }
   /* -------------------------------quick access--------------------------------------------- */
-  .QuickAccess{
-    background-color: #ffffff;
+
+  .QuickAccess {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
   }
-  .QuickAccess span{
-    padding: 2px;
-    font-size: 20px;
+  
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    
   }
-  .QuickAccess a{
-    background-color: rgb(230, 230, 230);
+  
+  .a-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
-    color: black;
-    padding: 10px;
-    margin: 0px 22px;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    background-color: rgb(230, 230, 230);
+    font-size: 17px;
+    padding: 5px;
+    max-width: max-content;
+    position: relative;
   }
-  .QuickAccess a:hover{
-    text-decoration: underline;
+  .a-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    width: 0;
+    height: 2px; 
+    background-color: #2E8b57; 
+    border-radius: 2px; 
+    transition: width 0.5s ease, left 0.5s ease;
   }
+  
+  .a-link:hover::before {
+    width: 100%; 
+    left: 0; 
+  }
+  .a-link:hover {
+    color:#2E8b57;
+  }
+  
+
 
 /* ------------------------------Footer------------------------------------------------------------ */
 footer .mobile a{
@@ -215,10 +248,6 @@ footer .mobile a{
   text-decoration: underline;
 }
 /* -------------------------------------------------Log in cricbuzz ------------------------*/
-/* .logintocricbuzz form{
-  background-color:lightgreen;
-  border-radius: 10px;
-} */
 .logintocricbuzz form .singup{
   text-decoration: none;
   color: black;
@@ -244,6 +273,8 @@ footer .mobile a{
 .sigupcricbuzz a:hover{
   text-decoration: underline;
 }
+
+
 .logintocricbuzz form input{
   background-color: transparent;
 }
@@ -261,7 +292,8 @@ footer .mobile a{
 }
 /* --------------------------------------------------logoutcricbuzz------------------------ */
 .logoutcricbuzz{
-  background-color: black;
+  /* background-color:black; */
+  background: linear-gradient(135deg, #2E8B57, #3CB371, #FFD700, #1F1D1B);
   position: absolute;
   right:0px;
   top: 50px;
@@ -281,15 +313,11 @@ footer .mobile a{
   color: white;
 }
 .logoutcricbuzz h1{
-  background-color: red;
+  background: linear-gradient(135deg, #2E8B57, #3CB371, #FFD700, #1F1D1B);
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin: auto;
-}
-.logoutcricbuzz span:hover{
-  background-color: red;
-  
 }
 .logoutcricbuzz .manageaccount{
   margin: 20px;
@@ -308,21 +336,22 @@ footer .mobile a{
   height: 40px;
 }
 .logoutaddaccount .addaccount{
-  background-color:dimgray;
+  background-color:transparent;
   height: 100%;
   border-radius: 10px 0px 0px 10px;
-  border: none;
+  border: 1px solid white;
   color: #ffffff;
   margin-right: 10px;
 }
 .logoutaddaccount .logout{
-  background-color:dimgray;
+  background-color:transparent;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
-  border: none;
+  border: 1px solid white;
   color: #ffffff;
   margin-left: 10px;
 }
+
 .privacyterms{
   margin-top: 20px;
   display: flex;
@@ -333,10 +362,24 @@ footer .mobile a{
   padding: 5px;
   color: white;
 }
-.privacyterms a:hover{
-  background-color: grey;
-  text-decoration: underline;
+
+.kkrteam a{
+  text-decoration: none;
+  color: black;
 }
+.kkrteam a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.cskteam a{
+  text-decoration: none;
+  color: black;
+}
+.cskteam a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 
 
 @media screen and (max-width: 576px){
@@ -349,7 +392,7 @@ footer .mobile a{
     background-color: rgb(230, 230, 230);
     padding: 5px;
     margin: 0px 5px;
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .logoutcricbuzz{
@@ -362,6 +405,28 @@ footer .mobile a{
   
 }
 
+@media screen and (max-width: 576px) and (min-width: 789px) {
+  .QuickAccess span{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+  .QuickAccess a{
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    margin: 0px 5px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 976px) and (max-width: 1200px) {
+.navbarmatch .navbar-nav .nav-item .nav-link{
+  font-size: 12px;
+  padding: 10px;
+}
+.navbar1 .navbar-nav .nav-item .nav-link{
+  font-size: 12px;
+  padding: 10px;
+} }
 /* ---------------------------------------------------------------------------------------- */
 
 

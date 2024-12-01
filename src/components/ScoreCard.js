@@ -68,7 +68,7 @@ const Score = ()=>{
   </li>
   </ul>
   
-<div className="col-lg-9 col-md-9 col-12 border p-2 bg-white">
+<div className="col-lg-9 col-md-12 col-12 border p-2 bg-white">
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-Commentary" role="tabpanel" aria-labelledby="pills-Commentary-tab">
   <div className="row">
@@ -111,7 +111,7 @@ const Score = ()=>{
     </div>
 
   </div>
-  <div class="tab-pane fade" id="pills-ScoreCard" role="tabpanel" aria-labelledby="pills-ScoreCard-tab">
+  <div class="tab-pane fade" id="pills-ScoreCard" role="tabpanel" aria-labelledby="pills-ScoreCard-tab"  style={{height:"500px"}}>
     <div>
     ScoreCard
     </div>
@@ -300,8 +300,8 @@ const Score = ()=>{
     <button class="nav-link text-dark" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Ind Inns</button>
   </li>
 </ul>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-Preview" role="tabpanel" aria-labelledby="pills-Preview-tab">
+<div class="tab-content" id="pills-tabContent"  style={{height:"500px"}}>
+  <div class="tab-pane fade show active" id="pills-Preview" role="tabpanel" aria-labelledby="pills-Preview-tab" >
     <div className="row">
       <div className="col-3">
         <h5>MATCHE INFO</h5>
@@ -318,13 +318,32 @@ const Score = ()=>{
       </div>
     </div>
   </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <div className="col-9">
+        <p>The players are out in the middle. Farooqi had a forgettable match on Saturday. He got the ball to swing but was 
+          erratic with his lines. He has the new ball in his hand. One slip in place and off we go..</p>
+          <p><b>Mushtaq Ahmed | Bangladesh's spin consultant:</b> They (spinners) are all very good, Bangladesh's main strength is spin
+             department, happy to work with them. (On Nasum) He was really impressive, he's got a great temperament. He's very clear 
+             with his role. He gave us the momentum with the bat as well. 
+            (On Rishad) He is a match-winner, he's tall. He's working on his wrong 'un and learning the art.</p>
+
+      </div>
+  </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"><div className="col-9">
+        <p>The players are out in the middle. Farooqi had a forgettable match on Saturday. He got the ball to swing but was 
+          erratic with his lines. He has the new ball in his hand. One slip in place and off we go..</p>
+          <p><b>Mushtaq Ahmed | Bangladesh's spin consultant:</b> They (spinners) are all very good, Bangladesh's main strength is spin
+             department, happy to work with them. (On Nasum) He was really impressive, he's got a great temperament. He's very clear 
+             with his role. He gave us the momentum with the bat as well. 
+            (On Rishad) He is a match-winner, he's tall. He's working on his wrong 'un and learning the art.</p>
+
+      </div>
+      </div>
 </div>
     </div>
 
   </div>
-  <div class="tab-pane fade" id="pills-LiveBlog" role="tabpanel" aria-labelledby="pills-LiveBlog-tab">
+  <div class="tab-pane fade" id="pills-LiveBlog" role="tabpanel" aria-labelledby="pills-LiveBlog-tab"  style={{height:"500px"}}>
     <div>
     There is no live blog for this match.
     </div>
@@ -401,7 +420,7 @@ const Score = ()=>{
     </table>
     </div>
   </div>
-  <div class="tab-pane fade" id="pills-News" role="tabpanel" aria-labelledby="pills-News-tab">
+  <div class="tab-pane fade" id="pills-News" role="tabpanel" aria-labelledby="pills-News-tab"  style={{height:"500px"}}>
     <div>
     <div className="col-12">
     <div className="row mt-4">
@@ -422,7 +441,7 @@ const Score = ()=>{
     </div>
     </div>
   </div>
-  <div class="tab-pane fade" id="pills-Photes" role="tabpanel" aria-labelledby="pills-Photes-tab">
+  <div class="tab-pane fade" id="pills-Photes" role="tabpanel" aria-labelledby="pills-Photes-tab"  style={{height:"500px"}}>
     <div>
     There is no Photes for this match.
     </div>

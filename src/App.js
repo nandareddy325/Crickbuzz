@@ -7,18 +7,20 @@ import Score from "./components/ScoreCard";
 import Footer from "./components/FooterC";
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa6";
+import Mainnavbar from "./components/Mainnavbar";
 
 const App = (presentUser) => {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTopButton(window.scrollY > 200);
-    };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      if(window.scrollY > 300){
+        setShowScrollTopButton(true)
+      }else{
+        setShowScrollTopButton(false)
+      }
+    })
+  })
   const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -35,6 +37,7 @@ const App = (presentUser) => {
       Move to top <FaArrowUp size={20} />
     </span>
       <Router>
+      {/* <Mainnavbar/> */}
         <Navbar presentUser ={presentUser}/>
         <Matches/>
         <Routes>

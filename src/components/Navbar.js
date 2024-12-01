@@ -5,38 +5,58 @@ import FireValid from "./Firevalidation";
 
 
 const Navbar = (presentUser)=>{
-  const name = presentUser.email;
-
   const [isCollapsed, setIsCollapsed] = useState(true);
-  const toggleCollapse = () => {
+  const [isfirebase,setIsfirebase] = useState(true)
+  
+  const firebase = ()=>{
+    setIsfirebase(!firebase)
+  }
+
+  const toggleNavbar = () => {
+    setIsfirebase(false)
     setIsCollapsed(!isCollapsed);
   };
+
     return(
       <>
-        <nav class="navbar navbar-expand-lg navbar-light px-4 navbar1 ">
-          <Link class="navbar-brand" to="/"><img src="https://static.cricbuzz.com/images/cb_logo.svg" width={"100px"}/></Link>
-        <button className="navbar-toggler" type="button"
-        onClick={toggleCollapse}
-        aria-expanded={!isCollapsed} aria-label="Toggle navigation"
+        <nav className="navbar navbar-expand-lg navbar-light px-4 navbar1">
+        <Link className="navbar-brand" to="/">
+        <img
+          src="https://static.cricbuzz.com/images/cb_logo.svg"
+          alt="Cricbuzz Logo"
+          style={{ width: "100px" }}
+        />
+      </Link>
+        <button
+        className="navbar-toggler"
+        type="button"
+        onClick={toggleNavbar}
+        aria-controls="navbarSupportedContent"
+        aria-expanded={!isCollapsed}
+        aria-label="Toggle navigation"
       >
-      <span className={isCollapsed ? 'navbar-toggler-icon' : 'btn-close'}></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-  <div 
-  className={`collapse navbar-collapse ${isCollapsed ? 'collapsed' : 'show'}`}
-  >
-    <ul class="navbar-nav m-auto ">
-      <li class="nav-item text-light">
-        <a class="nav-link  text-light" href="#">Live Scores</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link  text-light" href="#">Schedule</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle  text-light" href="#" >
-          Dropdown
-        </a>
-        
-      </li>
+      <div
+        className={`collapse navbar-collapse ${isCollapsed ? "" : "show"}`}
+        id="navbarSupportedContent"
+      >
+  <ul className="navbar-nav m-auto">
+    <li className="nav-item">
+      <a className="nav-link text-light" href="#">
+        Live Scores
+      </a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link text-light" href="#">
+        Schedule
+      </a>
+    </li>
+    <li className="nav-item dropdown">
+      <a className="nav-link dropdown-toggle text-light" href="#">
+        Dropdown
+      </a>
+    </li>
       <li class="nav-item">
         <a class="nav-link  dropdown-toggle  text-light" href="#">News
         <div className="names mt-2">
@@ -131,8 +151,8 @@ const Navbar = (presentUser)=>{
       <li class="nav-item ms-3">
         <a class="nav-link  text-light" href="#"><FaMagnifyingGlass/></a>
       </li>
-      <li class="nav-item ms-2  ">
-        <a class="nav-link  text-light" href="#">
+      <li class="nav-item ms-2 ">
+        <a class="nav-link  text-light" onClick={firebase} href="#">
         <FireValid/>
         </a>
       </li>

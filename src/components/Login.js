@@ -49,8 +49,8 @@ const LoginModal = () => {
       </a>
 
       {isModalOpen && (
-        <div className="">
-          <div className="modal show d-block " tabIndex="-1" role="dialog">
+        <div className="" >
+          <div className="modal show d-block " role="dialog">
             <div className="modal-dialog modal-fullscreen" role="document">
               <div className="modal-content ">
                 <div className="modal-header mx-3">
