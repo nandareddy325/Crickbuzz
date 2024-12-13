@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import FireValid from "./Firevalidation";
 
 
-const Navbar = (presentUser)=>{
+const Navbar = ()=>{
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [isfirebase,setIsfirebase] = useState(true)
   
@@ -22,7 +22,7 @@ const Navbar = (presentUser)=>{
         <nav className="navbar navbar-expand-lg navbar-light px-4 navbar1">
         <Link className="navbar-brand" to="/">
         <img
-          src="https://static.cricbuzz.com/images/cb_logo.svg"
+          src="https://static.cricbuzz.com/images/cb_logo.svg" onClick={()=>{setIsCollapsed(!isCollapsed);}}
           alt="Cricbuzz Logo"
           style={{ width: "100px" }}
         />
@@ -154,6 +154,7 @@ const Navbar = (presentUser)=>{
       <li class="nav-item ms-2 ">
         <a class="nav-link  text-light" onClick={firebase} href="#">
         <FireValid/>
+        {/* <button onClick={() => { auth.signOut()}}>Close</button> */}
         </a>
       </li>
     </ul>

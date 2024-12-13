@@ -13,10 +13,10 @@ const Footer = ()=>{
                             <img src="https://static.cricbuzz.com/images/cb_logo.svg" width={"100px"}/>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-8 m-auto  mobile">
+                    <div className="col-lg-3 col-md-6 col-8 mx-auto  mobile">
                         <div className="mt-3">
                            <h5>MOBILE SITE & APPS</h5>
-                           <p ><span> <BiWorld className="text-success"/></span> <a href="#">m.cricbuzz.com</a></p>
+                           <p ><span><BiWorld className="text-success"/></span> <a href="#">m.cricbuzz.com</a></p>
                            <p><span><BsAndroid className="text-success"/></span><a href="#">android</a></p>
                            <p><span><AiFillPhone className="text-success"/></span> <a href="#">iOS</a></p>
                         </div>

@@ -76,10 +76,7 @@ const Model = () => {
 
   return (
     <div className="loginpage">
-        
-
-        
-      <div onClick={openModal}>
+y      <div onClick={openModal}>
         <VscAccount />
       </div>
 
